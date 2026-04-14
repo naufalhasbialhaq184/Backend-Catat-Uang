@@ -14,14 +14,6 @@ const pool = new Pool({
 
 export default pool;
 
-pool.query('SELECT NOW()', (err, res) => {
-    if (err) {
-        console.error('❌ Koneksi Neon Gagal:', err.message);
-    } else {
-        console.log('✅ Koneksi Neon Berhasil! Jam Server:', res.rows[0].now);
-    }
-});
-
 // const pool = new Pool({
 //     user: 'naufalhasbialhaq',
 //     host: 'localhost',
